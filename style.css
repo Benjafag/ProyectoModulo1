@@ -15,25 +15,43 @@
     font-weight: 600;
   }
 }
-.boxCape{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00000081;
-  color: white;
+main{
+  padding-top: 75px;
 }
 .carousel-item{
   height: 70vh;
 }
-img{
+.carousel img{
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-main{
-  padding-top: 70px;
+.boxCape{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000081;
+}
+
+.loginContainer a{
+  color: var(--color1);
+}
+.loginContainer .btn{
+  background-color: var(--color1);
+}
+.imgLogin img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contactSection{
+  background-color: var(--color4);
+}
+.contactSection h1, 
+.contactSection h2{
+  font-family: 'Roboto Condensed', sans-serif;
 }
 @media screen and (max-width:768px) {
   .carousel-item{
