@@ -1,0 +1,42 @@
+:root{
+  --color1: #5465FF;
+  --color2: #788BFF;
+  --color3: #9BB1FF;
+  --color4: #BFD7FF;
+  --color5:#E2FDFF;
+}
+.navbar{
+  font-family: 'Roboto Condensed', sans-serif;
+  .nav-item{
+    font-family: 'Roboto', Courier, monospace;
+  }
+  .active{
+    color: var(--color1) !important;
+    font-weight: 600;
+  }
+}
+.boxCape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000081;
+  color: white;
+}
+.carousel-item{
+  height: 70vh;
+}
+img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main{
+  padding-top: 70px;
+}
+@media screen and (max-width:768px) {
+  .carousel-item{
+    height: 37vh;
+  }
+}
