@@ -66,6 +66,11 @@ main{
 }
 .contactSection iframe{
   opacity: .8;
+  transition: opacity .5s;
+}
+.contactSection iframe:hover{
+  opacity: 1;
+  transition: .2s;
 }
 .contactSection h1, 
 .contactSection h2{
