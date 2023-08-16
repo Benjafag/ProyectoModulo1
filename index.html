@@ -10,7 +10,7 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="position-fixed z-3 w-100">
+  <header class="position-fixed z-2 w-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-lg-fixed w-100 py-3">
       <div class="container-fluid justify-content-lg-center">
         <a class="navbar-brand fs-4 me-3" href="#">MAKEPOPMUSIC</a>
@@ -26,7 +26,9 @@
               <a class="nav-link" href="login.html">LOGIN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SUSCRIPCIÓN</a>
+              <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                SUSCRIPCION
+              </button>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">CONTACTO</a>
@@ -43,6 +45,31 @@
     </nav>
   </header>
   <main>
+    <section class="sectionModal">
+      <div class="modal modal-lg" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content z-3">
+            <div class="modal-header">
+              <h5 class="modal-title display-4">Suscríbete</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5 class="fw-light mb-3">Suscribiendote a nuestro blog te mantendras al tanto de todas las novedades del mundo de la música</h5>
+              <form>
+                <label for="exampleInputEmail1" class="form-label fs-3">Tu nombre</label>
+                <input type="text" class="form-control mb-3" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                <label for="exampleInputPassword1" class="form-label fs-3">Tu Email</label>
+                <input type="email" required class="form-control mb-3" id="exampleInputPassword1">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="carousel">
       <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
